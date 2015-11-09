@@ -26,7 +26,7 @@
         <!--IntergalactiTravel,Inc-->
         <scene sceneID="Tg7-DG-fyH">
             <objects>
-                <viewController id="CEK-Oh-jt5" sceneMemberID="viewController">
+                <viewController id="CEK-Oh-jt5" customClass="ViewController" customModule="InterGalacticTravel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NHK-iw-eFv"/>
                         <viewControllerLayoutGuide type="bottom" id="yVN-Ru-coy"/>
@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbk-c3-Tz9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbk-c3-Tz9">
                                 <rect key="frame" x="247" y="140" width="106" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="106" id="CSQ-ht-cOZ"/>
@@ -43,10 +43,10 @@
                                 </constraints>
                                 <state key="normal" title="Visit Red Dwarf"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="3CV-4R-tCV"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="redDwarf" id="3CV-4R-tCV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-nQ-Nlq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfD-nQ-Nlq">
                                 <rect key="frame" x="252" y="210" width="96" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OwK-mR-NHr"/>
@@ -72,26 +72,8 @@
             </objects>
             <point key="canvasLocation" x="1879" y="349"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="nSP-yw-mSs">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPO-dd-2iv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H54-fv-uTY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CEK-Oh-jt5" kind="relationship" relationship="rootViewController" id="nh8-k3-omr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OaV-nw-cNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1067" y="349"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SPz-wp-kMB"/>
+        <segue reference="3CV-4R-tCV"/>
     </inferredMetricsTieBreakers>
 </document>
